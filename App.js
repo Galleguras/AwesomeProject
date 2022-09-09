@@ -4,16 +4,11 @@ import LoginForm from "./src/components/LoginForm";
 import Saludar from "./src/components/Saludar";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
+import NavigationStack from "./src/navigation/NavigationStack";
 export default function App() {
   return (
     <NavigationContainer>
-      <View style={styles.container}>
-        <Text>Curso React Native</Text>
-        <Saludar firstName="Pablo" lastName="Perez Sol" />
-        <Saludar firstName="Luis" lastName="Lopez Gla" />
-        <Saludar firstName="Sergio" lastName="Nistal Ver" />
-        <Saludar />
-      </View>
+      <NavigationStack />
     </NavigationContainer>
   );
 }
